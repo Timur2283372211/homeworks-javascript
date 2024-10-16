@@ -37,6 +37,12 @@ function ex4(){
 
 //Завдання 5
 function ex5(){
-    let number = 1.8
+    let number = Math.random()*2
     results[5].textContent = Math.floor(number)
+}
+
+//Завдання 6
+function ex6(){
+    let suma = 10
+    results[4].textContent = suma + " зі знижкою"
 }

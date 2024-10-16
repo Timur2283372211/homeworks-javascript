@@ -38,7 +38,13 @@ function ex4() {
 
 
 function ex5() {
-  var number = 1.8;
+  var number = Math.random() * 2;
   results[5].textContent = Math.floor(number);
+} //Завдання 6
+
+
+function ex6() {
+  var suma = 10;
+  results[4].textContent = suma + " зі знижкою";
 }
 //# sourceMappingURL=task_02.dev.js.map

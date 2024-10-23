@@ -31,18 +31,40 @@ function ex3(){
 //Завдання 4
 function ex4(){
     let suma = +inputs[4].value
-    suma = suma - 10
-    results[4].textContent = suma + " зі знижкою"
+    suma = suma - suma * 0.1
+    results[7].textContent = suma + " зі знижкою"
 }
 
 //Завдання 5
 function ex5(){
     let number = Math.random()*2
-    results[5].textContent = Math.floor(number)
+    results[5].textContent = "число " + number
+    results[6].textContent = Math.floor(number)
 }
 
 //Завдання 6
 function ex6(){
-    let suma = 10
-    results[4].textContent = suma + " зі знижкою"
+    let suma = +inputs[5].value
+    suma = suma - suma * 0.1
+    results[7].textContent = suma + " зі знижкою"
+}
+
+//Завдання 7
+function ex7(){
+    let stringnumber = String(inputs[6].value)
+    results[8].textContent = parseFloat(stringnumber)
+}
+
+//Завдання 8
+    function ex8(){
+    let sqrtnumber = +inputs[7].value
+    results[9].textContent = parseFloat(stringnumber)
+}
+
+//Завдання 9
+function ex9(){
+    let stringnumber2 = String(+ inputs[8].value)
+    let number = + inputs[9].value
+    results[10].textContent = parseFloat(stringnumber2)
+    results[11].textContent = String(number)
 }

@@ -14,8 +14,12 @@ function ex1() {
 
 function ex2() {
   var email = inputs[0].value;
-  results[2].textContent = "n";
-  results[3].textContent = "n";
+
+  if (email.includes("@")) {
+    results[2].textContent = "@ знайдено, довжина email = " + email.length + "символів";
+  } else {
+    results[2].textContent = "@ не знайдено, довжина email = " + email.length + "символів";
+  }
 } //Завдання 3
 
 

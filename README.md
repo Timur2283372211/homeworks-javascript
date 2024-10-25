@@ -1,3 +1,3 @@
 # homeworks javascript
-# https://oser2.github.io/homeworks-javascript/
+# https://timur2283372211.github.io/homeworks-javascript/
  

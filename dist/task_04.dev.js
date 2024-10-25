@@ -16,8 +16,8 @@ function ex1() {
 
 
 function ex2() {
-  var pole3 = inputs[2].value;
-  var pole4 = inputs[3].value;
+  var pole3 = +inputs[2].value;
+  var pole4 = +inputs[3].value;
   var sumapole = pole3 + pole4;
 
   if (sumapole > 10) {

@@ -16,8 +16,8 @@ function ex1(){
 
 //Завдання 2
 function ex2(){
-    let pole3 = inputs[2].value 
-    let pole4 = inputs[3].value
+    let pole3 = + inputs[2].value 
+    let pole4 = + inputs[3].value
     let sumapole = pole3 + pole4 
     if(sumapole > 10){
         results[1].textContent = "Сума більша за 10"

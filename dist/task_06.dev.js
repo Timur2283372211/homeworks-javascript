@@ -1,5 +1,6 @@
 "use strict";
 
+var inputs = document.querySelectorAll("input");
 var results = document.querySelectorAll(".result"); //Завдання 1
 
 function ex1() {
@@ -55,18 +56,56 @@ function ex4() {
 
 
 function ex5() {
-  var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  var Array = [];
-  var n = 0;
+  var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var allnumbers = [];
 
-  for (var i = 0; i < 10; i++) {
-    if (arr[i] == 7) {
+  for (var _i = 0, _numbers = numbers; _i < _numbers.length; _i++) {
+    var number = _numbers[_i];
+
+    if (number == 7) {
       break;
     }
 
-    Array.push(n += 2);
+    allnumbers.push(number);
   }
 
-  results[4].textContent = Array;
+  results[4].textContent = allnumbers;
+} //Завдання 6
+
+
+function ex6() {
+  var n = inputs[0].value;
+  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var allnumbers = [];
+
+  for (var _i2 = 0, _numbers2 = numbers; _i2 < _numbers2.length; _i2++) {
+    var number = _numbers2[_i2];
+
+    if (number >= n) {
+      break;
+    }
+
+    allnumbers.push(number);
+  }
+
+  results[5].textContent = allnumbers;
+} //Завдання 7
+
+
+function ex7() {
+  var i = 1;
+  var allnumbers = [];
+
+  while (i <= 20) {
+    if (i % 3 === 0) {
+      i++;
+      continue;
+    }
+
+    allnumbers.push(i);
+    i++;
+  }
+
+  results[6].textContent = allnumbers;
 }
 //# sourceMappingURL=task_06.dev.js.map

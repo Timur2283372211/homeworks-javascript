@@ -1,4 +1,3 @@
-
 let inputs = document.querySelectorAll("input")
 let results = document.querySelectorAll(".result")
 
